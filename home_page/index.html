@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD PANDA</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main">
+            <div class="row clearfix">
+                    <img src="logo4.png" class="logo" alt="logo4">
+                <ul class="animate__animated animate__slideInDown" id="check-class">
+                    <li><a href="#">CAKE DELIVERY</a></li>
+                    <li><a href="#">HOW TO ORDER</a></li>
+                    <li><a href="#">CHECK MORE</a></li>
+                    <li><a href="sign_up/sign.html">SIGN UP</a></li>
+                </ul>
+                <a href="#" class="mobile-icon"  onclick="slideshow()">
+                    <i class="fa fa-bars"></i> </a>
+            </div>
+        </nav>
+        <div class="main-content">
+            <h1>WELCOME TO <span class="colorchange">FOOD PANDA</span>.<br>
+                HOUSE OF DESSERT LOVER OO YEAH! </h1>
+            <a href="#" class="btn btn-full">CLICK TO ORDER</a>    
+            <a href="#" class="btn btn-nav">SHOW ME MORE</a>    
+        </div>
+        <!-- <div class="bg">
+            <img src="cakie.jpg" alt="">
+        </div> -->
+    </header>
+    <script type="text/javascript">
+       function slideshow(){
+            var x=document.getElementById('check-class');
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+       }
+    </script>
+</body>
+</html>

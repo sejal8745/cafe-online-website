@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>LOGIN AND REGISTER</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="C:\Users\SEJAL GOYAL\Documents\cafe online website\home_page\index.html"></a>
+        <div class="home">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+                </div>
+                <div class="social-symbol">
+                    <img src="fb.png" alt="fb.png">
+                    <img src="gp.png" alt="gp.png">
+                </div>
+                <form id="login" class= "form-details">
+                    <input type="text" class="input-fields" placeholder="Enter your User Id" required>
+                    <input type="text" class="input-fields" placeholder="Enter your Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember me</span>
+                    <button type="button" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class= "form-details">
+                    <input type="text" class="input-fields" placeholder="Enter your User Id" required>
+                    <input type="email" class="input-fields" placeholder="Enter the Email Id" required>
+                    <input type="text" class="input-fields" placeholder="Enter your Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to all the terms and conditions </span>
+                    <button type="button" class="submit-btn">Register</button>                </form>
+            </div>
+        </div>
+        <script>
+            var a= document.getElementById("login");
+            var b= document.getElementById("register");
+            var c= document.getElementById("btn");
+            
+            
+            function register(){
+                a.style.left = "-400px";
+                b.style.left = "20px";
+                c.style.left = "110px";
+            }
+            
+            function login(){
+                a.style.left = "20px";
+                b.style.left = "450px";
+                c.style.left = "0px";
+            }
+
+            
+        </script>
+    </body>
+</html>

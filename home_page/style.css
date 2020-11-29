@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* header{
+    background-image: url(../frontimg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+} */
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: whitesmoke;
+    font-family: 'Flamenco', cursive;
+    /* background-image: url(cakie.jpg); */
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(105, 78, 78, 0.5)) ,url("cakie.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* .bg {
+    object-fit: contain;
+    width: 100px;
+    height: auto;
+} */
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+ul{
+    float: right;
+    margin-top: 55px;
+    list-style-type: none;
+    margin-block-end: initial;
+}
+ul li{
+    display: inline-block;   
+}
+
+ul li a{
+    padding: 5px 0px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: ivory;
+    padding: 5px 30px;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+ul li a:hover{
+    border-bottom: 0.5px solid #D2691E;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    /* transform: translate(-50%,-50%); */
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #D2691E;
+    margin-right: 15px;
+    border: 1px solid #D2691E;
+}
+
+.btn-full:hover{
+    background-color: #fff;
+}
+.btn-nav{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;   
+}
+.btn-nav:hover{
+    background-color: #D2691E ;
+}
+
+.colorchange{
+    animation: colorchangefood 1s infinite;
+    font-family: cursive;
+}
+@keyframes colorchangefood{
+    0%{color: #EE82EE;}
+    25%{color: #D2691E;}
+    50%{color: whitesmoke;}
+    100%{color: #D2691E;}
+}
+
+.mobile-icon{
+    display: none;
+}
+
+@media only screen and (max-width:1180px){
+    .main-content{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width:768px){
+    h1{font-size: 180%;}
+    ul{display: none;} 
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    ul{
+        float: left;
+    }
+    ul li{
+        display: block;
+        margin-top: 10px;
+    }
+}

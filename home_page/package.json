@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "\"THis\u001b[D\u001b[h\u001b[C\u001b[C is test directory to learn git and Node\"",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sejal8745/Cafe-webpage-.git"
+  },
+  "author": "Sejal goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sejal8745/Cafe-webpage-/issues"
+  },
+  "homepage": "https://github.com/sejal8745/Cafe-webpage-#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

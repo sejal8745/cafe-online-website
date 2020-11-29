@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(googlebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 320px;
+    height: 460px;
+    position: relative;
+    margin: 7% auto;
+    background: cornsilk;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #87CEFA;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #0000FF, #00BFFF);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.social-symbol{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social-symbol img{
+    width: 30px;
+    margin: 0 5px;
+    box-shadow: 0 0 10px 0 #00BFFF ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.form-details{
+    top: 180px;
+    width: 280px;
+    position: absolute;
+    transition: .5s;
+}
+.input-fields{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 1px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    outline: none;
+}
+.check-box{
+    margin: 30px 3px 30px 1px;
+}
+span{
+    color: #777777;
+    font-size: 12px;
+    bottom: 95px;
+    position: absolute;
+}
+.submit-btn{
+    width: 70%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #0000FF, #00BFFF);
+    cursor: pointer;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 15px 50px;
+    padding: 10px 30px;
+}
+
+#login{
+    left: 15px;
+}
+#register{
+    left: 400px;
+}
